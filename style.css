@@ -1,6 +1,6 @@
 body {
   font-family: system-ui, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #453b49;
   color: #333;
   margin: 0;
   padding: 2rem;
@@ -9,19 +9,34 @@ body {
 .container {
   max-width: 800px;
   margin: auto;
-  background-color: white;
+  background-color: #68419b;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
-  color: #1a73e8;
+  color: #fbff00;
 }
+
+h2 {
+  color: #fbff30;
+}
+
+p, li {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  text-align: justify;
+  font-weight: bold;
+} 
 
 a {
   color: #1a73e8;
   text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 a:hover {
