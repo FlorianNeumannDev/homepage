@@ -19,9 +19,12 @@ body {
   list-style-type: none;
 }
 
-.navbar-element{
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+.navbar-element {
+  padding-right: 1em;
+}
+
+.navbar-link {
+  color: var(--tertiary-color)
 }
 
 .container {
