@@ -1,39 +1,57 @@
+:root {
+  --primary-color: #201E50; /* Space cadet */
+  --secondary-color: #E8DB7D; /* Flax */
+  --tertiary-color: #605C4E; /* Walnut brown */
+  --quaternary-color: #AD91A3 ; /* Rose quartz */
+  --quinary-color: #331E36; /* Dark purple */
+}
+
 body {
   font-family: system-ui, sans-serif;
-  background-color: #453b49;
-  color: #333;
+  background-color: var(--quaternary-color);
   margin: 0;
   padding: 2rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navbar-element{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .container {
   max-width: 800px;
   margin: auto;
-  background-color: #68419b;
+  background-color: var(--tertiary-color);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
-h1 {
-  color: #fbff00;
+.container:hover {
+  background-color: var(--quinary-color)
 }
 
-h2 {
-  color: #fbff30;
+h1, h2{
+  color: var(--secondary-color);
 }
 
-p, li {
+p, li, address{
   line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 1.1rem;
-  color: #f0f0f0;
+  color: var(--secondary-color);
   text-align: justify;
   font-weight: bold;
 } 
 
 a {
-  color: #1a73e8;
+  color: var(--quaternary-color);
   text-decoration: none;
   transition: color 0.3s ease;
   font-weight: bold;
@@ -46,6 +64,6 @@ a:hover {
 .footer {
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: #888;
+  color: var(--tertiary-color);
   text-align: center;
 }
